@@ -64,7 +64,7 @@ lab). This class might seem large, but it follows a logical structure:
   To ensure correct synchronization and to better organize the code, `run()` calls helper methods,
   some of which are detailed below.
   * `updateDeltaPosition()` updates the robot `deltaPosition` (_Δx_, _Δy_, _Δθ_) given the motor
-  tacho counts. Pay close attention the order of operations here! Make sure your calculations
+  tacho counts. Pay close attention to the order of operations here! Make sure your calculations
   work "on paper" before attempting to implement them in code.
   * `updateOdometerValues()` increments the current values of the `x`, `y` and `theta` instance
   variables using `deltaPositions`, which was just calculated. `x` is already done but you need to do `y` and `theta`.
