@@ -8,7 +8,7 @@ import static simlejos.ExecutionController.*;
  */
 public class SquareDriver {
   
-  /** The length of the size of the square in tiles. */
+  /** The length of the size of the square in tiles. Ranges from 3 to 6 (inclusive). */
   public static final int SQUARE_LENGTH = 4;
 
   /**
@@ -25,9 +25,9 @@ public class SquareDriver {
       // Sleep for 2 seconds
       sleepFor(TIMEOUT_PERIOD);
 
-      for (int i = 0; i < SQUARE_LENGTH; i++) {
+      for (int i = 0; i < 4; i++) {
         setSpeed(FORWARD_SPEED);
-        moveStraightFor(3);
+        moveStraightFor(SQUARE_LENGTH);
 
         // turn 90 degrees clockwise
         setSpeed(ROTATE_SPEED);
